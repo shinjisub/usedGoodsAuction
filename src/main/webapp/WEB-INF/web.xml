@@ -14,24 +14,6 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
-	<!-- Encoding filter  -->
-	<filter>
-		<filter-name>encodingFilter</filter-name>
-		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-		<init-param>
-			<param-name>encoding</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-		<init-param>
-			<param-name>forceEncoding</param-name>
-			<param-value>true</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>encodingFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
@@ -51,17 +33,39 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
-	<!-- 
+	<!--               Config Setting                 -->
+	<welcome-file-list>
+		<welcome-file>
+			/WEB-INF/views/index.jsp
+		</welcome-file>
+	</welcome-file-list>
+	
+	<!-- Error -->
 	<error-page>
 		<error-code>500</error-code>
-		<location>/505</location>
+		<location>/WEB-INF/views/error/500.jsp</location>
 	</error-page>
-
 	<error-page>
 		<error-code>404</error-code>
-		<location>/404</location>
+		<location>/WEB-INF/views/error/404.jsp</location>
 	</error-page>
-	 --> 
 	
+	<!-- Encoding filter  -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
 </web-app>

@@ -2,19 +2,10 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.project.accounting.home.homeDAO">
+<mapper namespace="com.projects.usedauction">
 		
-		<select id="loginChk" resultType="integer" parameterType="hashMap">
-			SELECT count(*) as value FROM T_userInfo where userid=#{userId} and userpw=#{userPw}
-		</select>
-		
-		<select id="loginInfo" resultType="hashmap" parameterType="hashmap">
-			SELECT
-				a.idx user_idx, A.userid userid, a.username username, a.grace grace, a.crdate user_crdate,
-			  	b.idx Pidx, b.com_name com_name, b.daepyoja daepyoja, b.com_tel com_tel, b.com_email com_email, b.BUSINESSNUM BUSINESSNUM, b.com_addr_num com_addr_num, b.com_addr_num2, b.com_addr com_addr     
-			  , b.com_addr2 com_addr2, b.com_logo com_logo, b.com_ingam com_ingam, b.CRDATE  com_crdate    
-			FROM t_userInfo a join t_companyInfo b
-			on a.pidx = b.idx  where A.userid = #{userid}
-		</select>
+	<select id="testInfo" resultType="hashmap" parameterType="hashmap">
+		SELECT idx, name FROM TEST
+	</select>
 		
 </mapper>

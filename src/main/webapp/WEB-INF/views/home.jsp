@@ -1,14 +1,10 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Used Auction</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+	<%@include file="page/includeingFile/iHead.jspf" %>
+	<P>  Sample Data : ${sampleData}. </P>
+	<%@include file="page/includeingFile/iFooter.jspf" %>
 </body>
 </html>
