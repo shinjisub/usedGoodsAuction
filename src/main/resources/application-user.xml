@@ -9,11 +9,11 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 		
-		
-<!--      <mvc:interceptors>
-	     <mvc:interceptor>
-	           <mvc:mapping path="/**"/>
-	           <bean id="commonInterceptor" class="auction.common.util.CommonInterceptor"/>
-	     </mvc:interceptor>
-    </mvc:interceptors> -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/home.com"/>
+			<bean id="commonInterceptor" class="auction.common.util.CommonInterCeptor"/>
+ 			<!-- <mvc:exclude-mapping path="/main/main" /> -->
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

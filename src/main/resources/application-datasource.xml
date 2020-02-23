@@ -10,10 +10,18 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+
+		<bean id="propertyPlaceholderConfigurer"
+			class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+			<property name="locations">
+				<list>
+					<value>classpath:prop/db/property/oracle_db_properties</value>
+					<value>classpath:prop/db/property/mysql_db_properties</value>
+				</list>
+			</property>
+		</bean>
 		
-		
-		<!-- 방법1.데이터베이스 속성값의 설정위치표시 -->
-		<context:property-placeholder location="classpath:prop/db/property/mysql_db_properties"/>
 		<bean id="dataSource" 
 			class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 			<property name="driverClassName"  value="${jdbc.driverClassName}"/>

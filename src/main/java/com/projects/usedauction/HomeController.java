@@ -24,10 +24,14 @@ public class HomeController {
 	@RequestMapping(value = "/home.com", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		List<HashMap<String, Object>> m = sql.selectList("testInfo", "");
-		System.out.println(m);
 		
 		model.addAttribute("sampleData", m);
 		return "home";
+	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Locale locale, Model model) {
+		return "/page/login/login";
 	}
 	
 }
