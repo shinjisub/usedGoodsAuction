@@ -3,9 +3,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>500 Error</title>
 </head>
 <body>
-	<img alt="500 Error" src="${contextPath}/resources/img/error/500_image.png" style="height: 100%"/>
+	<h1 style="border:1px solid red;">iHead</h1>
 </body>
 </html>
