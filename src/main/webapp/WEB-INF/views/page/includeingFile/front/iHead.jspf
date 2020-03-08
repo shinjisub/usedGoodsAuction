@@ -5,6 +5,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-	<h1 style="border:1px solid red;">iHead</h1>
+	<div id="header" class="skel-panels-fixed">
+		<div id="logo">
+			<h3>
+				<a href="/">새로운 중고물품 거래 - 경매를 통한 물품거래</a>
+			</h3>
+			<!-- <span class="tag">by ESS</span> -->
+		</div>
+		<nav id="nav">
+			<ul>
+				<li class="active"><a href="index.html">Homepage</a></li>
+				<li><a href="left-sidebar.html">Left Sidebar</a></li>
+				<li><a href="right-sidebar.html">Right Sidebar</a></li>
+				<li><a href="no-sidebar.html">No Sidebar</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="banner" class="container">
+		<section>
+			<h2>무엇을 찾고 계신가요?</h2>
+			<input type="text" class="" style="width: 100%;" placeholder="검색어를 입력하세요"/>
+			<!-- <a href="#" class="button medium">SignIn / Sing Up</a> -->
+		</section>
+	</div>
+
 </body>
 </html>
