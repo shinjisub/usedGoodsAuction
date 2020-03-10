@@ -40,9 +40,9 @@
 <script src="${jsPath}/temp/skel.min.js"></script>
 <script src="${jsPath}/temp/skel-layers.min.js"></script>
 <script src="${jsPath}/temp/init.js"></script>
-<script type="text/javascript">
-	var test = "${contextPath}";
-	console.log('test', test);
+<script>
+	var globalContextPath = "<c:out value='${contextPath}'/>";
+	//action.commonAjax('emailProc', 'test');
 </script>
 
 

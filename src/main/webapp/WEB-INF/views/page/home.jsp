@@ -19,34 +19,34 @@
 				<div id="extra">
 					<div class="container">
 						<div class="row no-collapse-1">
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic01.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product1.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="join" class="button">Read More</a> </div>
 							</section>
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic02.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product2.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="#" class="button">Read More</a> </div>
 							</section>
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic03.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product3.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="#" class="button">Read More</a> </div>
 							</section>
 						</div>
 						<div class="row no-collapse-1">
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic01.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product4.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="#" class="button">Read More</a> </div>
 							</section>
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic02.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product5.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="#" class="button">Read More</a> </div>
 							</section>
-							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/temp/pic03.jpg" alt=""></a>
+							<section class="4u"> <a href="#" class="image featured"><img src="${imgPath}/product/product6.jpg" alt=""></a>
 								<div class="box">
 									<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
 									<a href="#" class="button">Read More</a> </div>
