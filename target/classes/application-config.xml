@@ -19,6 +19,8 @@
 			<property name="suffix" value=".jsp" />
 			<property name="contentType" value="text/html; charset=UTF-8"/>
 		</bean>
+		
+		<bean id="jsonView" class="net.sf.json.spring.web.servlet.view.JsonView"/>
 	
 	<!-- 	쿼리 로그 찍으려면 datasource ID부분에 dataSourceSpied 넣고 밑에 주석풀기 --> 
 	<!-- <bean id="dataSource" 

@@ -26,6 +26,7 @@
 		</bean>
 		
 		<!-- Bean -->
+		<bean id="uploadUtil" class="auction.common.util.UploadUtil"/>
 		<bean id="mailUtil" class="auction.common.util.MailUtil"/>
 		<bean id="jsonWrite" class="auction.common.util.JsonWrite"/>
 		<bean id="xmlWrite" class="auction.common.util.XmlWrite"/>

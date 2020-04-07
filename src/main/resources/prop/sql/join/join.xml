@@ -7,9 +7,38 @@
 	<select id="getMemberList" resultType="hashmap" parameterType="hashmap">
 		SELECT * FROM UA_MEMBER
 	</select>
+	
+	<select id="getMemberIdChk" resultType="int" parameterType="hashmap">
+		SELECT COUNT(*) AS CNT
+		FROM UA_MEMBER
+		WHERE MEMBER_ID = #{member_id}
+	</select>
 		
 		
 	<insert id="addMember" parameterType="hashmap">
-	
+		<!-- MYSQ-SERVER 강제 입력시 테스트를 위한 주석처리..(NULL값 들어감..) -->
+			INSERT INTO UA_INSERTTEST(NAME, ADDR) VALUES(NAME='1', ADDR = '2')
+			ON DUPLICATE KEY UPDATE NAME = 'WW', ADDR= 'DDD'
+
+		<!-- 
+		INSERT INTO UA_MEMBER (
+			<if test="akey != null and akey != ''">
+				AKEY ,
+			</if>
+			MEMBER_ID, MEMBER_PASSWORD, MEMBER_NAME, MEMBER_ADDR,
+			MEMBER_PHONE, CREATE_DATE, LAST_UPDATE_DATE, UPDATE_USER_ID
+		) VALUES(
+			<if test="akey != null and akey != ''">
+				AKEY ,
+			</if>
+			MEMBER_ID = #{member_id}, MEMBER_PASSWORD = #{member_password}, MEMBER_NAME= #{member_name}, MEMBER_ADDR = #{member_addr},
+			MEMBER_PHONE = #{member_phone}, CREATE_DATE = NOW(), LAST_UPDATE_DATE = NOW(), UPDATE_USER_ID = #{member_id} 
+		) ON DUPLICATE KEY 
+		UPDATE
+			MEMBER_NAME = #{member_name},
+			MEMBER_ADDR = #{member_addr},
+			MEMBER_PHONE = #{member_phone},
+			LAST_UPDATE_DATE = NOW(),
+			UPDATE_USER_ID = #{member_id} -->
 	</insert>
 </mapper>

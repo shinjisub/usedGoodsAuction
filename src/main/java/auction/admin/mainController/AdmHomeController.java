@@ -16,7 +16,7 @@ public class AdmHomeController {
 	
 	
 	public String admLogin(Locale locale, Model model) {
-		return "/login/login";
+		return "/admin/login/login";
 	}
 	
 }

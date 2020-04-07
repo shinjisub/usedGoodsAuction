@@ -8,13 +8,10 @@
 	<nav id="nav">
 		<ul>
 			<li>
-				<a href="#">SignIn / Sing Up</a>
-			</li>
-			<li>
-				<a href="/join">Join</a>
+				<a href="/login">Sign In </a> / <a href="/join"> Sing Up</a>
 			</li>
 			<li class="active">
-				<a href="index.html">Sale</a>
+				<a href="/product">Sale</a>
 			</li>
 			<li>
 				<a href="right-sidebar.html">Purchase</a>
@@ -25,6 +22,6 @@
 <div id="banner" class="container">
 	<section>
 		<h2>무엇을 찾고 계신가요?</h2>
-		<input type="text" class="" style="width: 100%;" placeholder="검색어를 입력하세요"/>
+		<input type="text" class="" style="width: 100%;" placeholder="검색어를 입력하세요"/><a href="javasript::"><i>검색</i></a>
 	</section>
 </div>
